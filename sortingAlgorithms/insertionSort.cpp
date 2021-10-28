@@ -8,7 +8,10 @@ vector<int> insertionSort(vector<int> arr){
 	for(int i=1; i<arr.size(); i++){
 		int index = i; 
 		if(arr[i-1] > arr[i]){
-			while()
+			int num = arr[i]; 
+			while(arr[index-1] > arr[i]){
+				
+			}	
 		}
 	}
 }
