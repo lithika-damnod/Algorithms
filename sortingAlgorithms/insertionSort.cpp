@@ -10,7 +10,7 @@ vector<int> insertionSort(vector<int> arr){
 		if(arr[i-1] > arr[i]){
 			int num = arr[i]; 
 			while(arr[index-1] > arr[i]){
-				//working on while loop
+				//working on while loop loop
 			}	
 		}
 	}
