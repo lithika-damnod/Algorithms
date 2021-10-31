@@ -1,21 +1,24 @@
 #include <iostream>
-#include <vector> 
+#include <vector>
+#include <string>  
 using namespace std; 
 
 //Kruskal's Algorithm
-
 //get metrices
-void getMetrices(){
+int* getMetrices(){
 	int nV; cin >> nV; 
+	int *mtx[nV][nV]; 
 	for(int i=0; i<nV; i++){
 		for(int j=0; j<nV; j++){
-			int tmpChar; cin >> tmpChar;
+			int tmpInt; cin >> tmpInt;
+			*mtx[i][j] = tmpInt; 
 		}
 	}
+	return **mtx; 
 }
 
 
 int main(){
-	getMetrices(); 	
+	int *output = getMetrices(); 	
 	return 0; 
 }
