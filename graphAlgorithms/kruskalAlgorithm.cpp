@@ -1,40 +1,24 @@
 #include <iostream>
-#include <vector> 
+#include <vector>
+#include <string>  
 using namespace std; 
 
 //Kruskal's Algorithm
-
 //get metrices
-void getMetrices(){
-	bool similarFound = false; 
-	//while loop not working properly : TODO
-	//while doesn't loop when there's similar vertex letters found	
-	while(!similarFound){
-		cout << "number of vertices: "; 
-		int nV; cin >> nV; 
-		cout << "enter vertex letter" << endl; 
-		vector<char> charArr; 
-		for(int i=0; i<nV; i++){
-			cout << "vertex " << i + 1 << ": "; 
-			char vChar; cin >> vChar; 	
-			charArr.push_back(vChar); 
-		}
-		//validation - detect same vertice letters	
-		for(int i=0; i<charArr.size(); i++){
-			for(int j=i+2; j<charArr.size(); j++){
-				if(charArr[i] == charArr[j]){
-					cout << "similar vertices found.." << endl;
-				}
-				else{
-					similarFound = true; 
-				}
-			}
+int* getMetrices(){
+	int nV; cin >> nV; 
+	int *mtx[nV][nV]; 
+	for(int i=0; i<nV; i++){
+		for(int j=0; j<nV; j++){
+			int tmpInt; cin >> tmpInt;
+			*mtx[i][j] = tmpInt; 
 		}
 	}
+	return **mtx; 
 }
 
 
 int main(){
-	getMetrices(); 	
+	int *output = getMetrices(); 	
 	return 0; 
 }
