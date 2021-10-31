@@ -19,17 +19,6 @@ void getMetrices(){
 			char vChar; cin >> vChar; 	
 			charArr.push_back(vChar); 
 		}
-		//validation - detect same vertice letters	
-		for(int i=0; i<charArr.size(); i++){
-			for(int j=i+2; j<charArr.size(); j++){
-				if(charArr[i] == charArr[j]){
-					cout << "similar vertices found.." << endl;
-				}
-				else{
-					similarFound = true; 
-				}
-			}
-		}
 	}
 }
 
