@@ -7,6 +7,7 @@ using namespace std;
 //get metrices
 void getMetrices(){
 	bool similarFound = false; 
+	//while loop not working properly : TODO
 	while(!similarFound){
 		cout << "number of vertices: "; 
 		int nV; cin >> nV; 
