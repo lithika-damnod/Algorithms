@@ -3,6 +3,12 @@
 #include <string>  
 using namespace std; 
 
+
+//metrices struct
+struct metrices{
+	
+}
+
 //Kruskal's Algorithm
 //get metrices
 int** getMetrices(){
