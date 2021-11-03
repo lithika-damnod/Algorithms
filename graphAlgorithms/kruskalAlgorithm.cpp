@@ -3,8 +3,9 @@
 #include <string>  
 using namespace std; 
 
+//covert metrices to a data structure.
+
 //Kruskal's Algorithm
-//get metrices
 int** getMetrices(){
 	int nV; cin >> nV; 
 	int mtx[nV][nV]; 
