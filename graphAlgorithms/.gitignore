@@ -1,1 +1,2 @@
-ouput.exe output.exe
+*.exe
+*.cpp
