@@ -17,6 +17,7 @@ vector<int> bubbleSort(vector<int> arr, int mode){
     if(mode == 0){    
         int nR = 0; 
         int nM = 0;     
+
         while((nR == 0 && nM == 0) || nM != 0){
             nM = 0; 
             nR = 0; 
