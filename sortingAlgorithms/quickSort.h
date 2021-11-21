@@ -15,32 +15,7 @@ using namespace std;
 vector<int> quickSort(vector<int> arr, int mode){
     //  ASCENDING
     if(mode == 0){
-        int nPivots = 0;  
-        while(nPivots != arr.size()){
-            int baseIndex = (arr.size() + 1) / 2;  
-            int basePivot = arr[baseIndex];
-            vector<int> arrClone = arr; 
-            for(int i=1; i<baseIndex; i++){
-                int j = i - 1; 
-                if(arr[j] > arr[i]){
-                    int tmp = arr[j]; 
-                    arr[j] = arr[i]; 
-                    arr[i] = tmp; 
-                }
-            }
-            for(int i=arr.size(); i > baseIndex; i--){
-                int j = i - 1; 
-                if(arr[j] > arr[i]){
-                    if(arr[j] == baseIndex ){
-                        break; 
-                    }
-                    int tmp = arr[j]; 
-                    arr[j] = arr[i]; 
-                    arr[i] = tmp; 
-                }
-            }
-        }
-        return arr; 
+        
     }
     // DESCENDING
     else if(mode == 1){
