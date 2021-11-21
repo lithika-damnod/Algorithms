@@ -5,6 +5,13 @@
 using namespace std; 
 
 
+// swap two values in an array
+void swap(int *a, int *b){
+    int t = *a; 
+    *a = *b; 
+    *b = t; 
+}
+
 /*
     bubbleSort(arr, mode)
     pass parameter 0 for ASCENDING order
