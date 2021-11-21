@@ -31,9 +31,7 @@ vector<int> bubbleSort(vector<int> arr, int mode){
                 int i=j-1; 
                 if(arr[i] > arr[j]){
                     nM++; 
-                    int tmp = arr[j]; 
-                    arr[j]  = arr[i]; 
-                    arr[i] = tmp; 
+                    swap(arr[j], arr[i]); 
                 }
             }
             nR++;   
