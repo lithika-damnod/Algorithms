@@ -23,3 +23,23 @@ int lowerBound(vector<int> arr, int size){
         return lowerbound+1; 
     }
 }
+
+vector<vector<int>> firstBin(vector<int> arr, int size){
+    vector<vector<int>> output; 
+    for(int i=0; i<arr.size(); i++){
+        int indexUp = i; 
+        int sum; 
+        vector<int> push; 
+        while(sum < size){
+            sum += arr[indexUp]; 
+            push.push_back(arr[indexUp]); 
+            indexUp++; 
+        }
+        output.push_back(push); 
+        push.clear(); 
+        i = indexUp ;  
+        sum = 0; 
+    }
+
+    return output; 
+}
