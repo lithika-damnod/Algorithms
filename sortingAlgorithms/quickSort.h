@@ -13,11 +13,11 @@ using namespace std;
 
 // quick sort algorithm for integers
 vector<int> quickSort(vector<int> arr, int mode){
-    //  ASCENDING Mode 0
+    //  ASCENDING
     if(mode == 0){
-        
+ 
     }
-    // DESCENDING Mode 1 
+    // DESCENDING
     else if(mode == 1){
         return arr; 
     }

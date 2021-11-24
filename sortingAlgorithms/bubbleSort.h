@@ -5,6 +5,13 @@
 using namespace std; 
 
 
+// swap two values in an array
+void swap(int *a, int *b){
+    int t = *a; 
+    *a = *b; 
+    *b = t; 
+}
+
 /*
     bubbleSort(arr, mode)
     pass parameter 0 for ASCENDING order
@@ -25,9 +32,7 @@ vector<int> bubbleSort(vector<int> arr, int mode){
                 int i=j-1; 
                 if(arr[i] > arr[j]){
                     nM++; 
-                    int tmp = arr[j]; 
-                    arr[j]  = arr[i]; 
-                    arr[i] = tmp; 
+                    swap(arr[j], arr[i]); 
                 }
             }
             nR++;   
