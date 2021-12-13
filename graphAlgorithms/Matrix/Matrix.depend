@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1639388068 source:c:\users\dulina\documents\algorithms\graphalgorithms\matrix\src\matrix.cpp
+	"Matrix.h"
+	<iostream>
+	<vector>
+
+1639387756 c:\users\dulina\documents\algorithms\graphalgorithms\matrix\include\matrix.h
+	<iostream>
+	<vector>
+
+1639388086 source:c:\users\dulina\documents\algorithms\graphalgorithms\matrix\main.cpp
+	<iostream>
+	"Matrix.h"
+
