@@ -10,7 +10,9 @@ class Matrix
         Matrix();
         Matrix(int n);
         virtual ~Matrix();
-        void print();
+        void print(); // prints the matrix
+        int size(); // returns the size of the matrix
+        vector<int> pop_row(int index); // deletes a row in the matrix
     protected:
 
     private:
