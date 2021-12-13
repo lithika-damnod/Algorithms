@@ -8,6 +8,8 @@ Matrix::Matrix()
     cout << "number of vertices: ";
     int n; cin >> n;
     nV = n;
+    nR = n;
+    nC = n;
     // input the values for the matrix
     for(int i=0; i<n; i++){
         vector<int> tmpArr;
@@ -23,6 +25,8 @@ Matrix::Matrix()
 
 Matrix::Matrix(int n){
     nV = n;
+    nR = n;
+    nC = n;
     for(int i=0; i<n; i++){
         vector<int> tmpArr;
         for(int j=0; j<n; j++){
@@ -35,8 +39,8 @@ Matrix::Matrix(int n){
 }
 
 void Matrix::print(){
-    for(int i=0; i<nV; i++){
-        for(int j=0; j<nV; j++)
+    for(int i=0; i<nR; i++){
+        for(int j=0; j<nC; j++)
             cout << data[i][j] << '\t';
         cout << endl;
     }
@@ -50,9 +54,13 @@ vector<int> Matrix::pop_row(int index){
     if(index < nV){
         vector<int> poped = data[index];
         data.erase(data.begin() + index);
-        nV--;
+        nR--;
         return poped;
     }
+}
+
+int Matrix::get_vertex(int parentIndex, int childIndex){
+    return data[parentIndex][childIndex];
 }
 
 Matrix::~Matrix()
